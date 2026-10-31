@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Donate, Volunteer or Foster a Child | Bethany House Trust</title>
+<meta name="description" content="Pledge a donation, give your time as a volunteer, or open your home as a foster or adoptive parent for children in Krugersdorp.">
+<link rel="canonical" href="https://FikileMonyela.github.io/give.html">
+<meta property="og:title" content="Donate, Volunteer or Foster a Child | Bethany House Trust">
+<meta property="og:description" content="Pledge a donation, give your time as a volunteer, or open your home as a foster or adoptive parent for children in Krugersdorp.">
+<meta property="og:url" content="https://FikileMonyela.github.io/give.html">
+
+        <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/extras.css">
+     <link rel="canonical" href="https://FikileMonyela.github.io/">
+
+
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; script-src-attr 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://tile.openstreetmap.org https://unpkg.com; connect-src 'self' https://jsonplaceholder.typicode.com; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Bethany House Trust",
+    "description": "A child protection organisation giving orphaned and vulnerable children a safe, loving home in Krugersdorp.",
+    "url": "https://FikileMonyela.github.io/",
+    "logo": "https://FikileMonyela.github.io/Image/bethany-house-trust-logo.png",
+    "telephone": "+27829007832",
+    "email": "admin@childincrisis.org.za",
+    "foundingDate": "1998",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Krugersdorp",
+        "addressRegion": "Gauteng",
+        "addressCountry": "ZA"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.0978,
+        "longitude": 27.7302
+    },
+    "sameAs": [
+        "https://www.facebook.com/TheBethanyHouseTrust",
+        "https://www.instagram.com/thebethanyhousetrust/"
+    ]
+}
+</script>
+
+</head>
+<body style="background-color: whitesmoke;">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+            <img src="Image/bethany-house-trust-logo.png" alt="Bethany House Trust logo: a house, sun and flower" width="100" height="auto">
+            <img src="Image/bethanyText.png" alt="Bethany House Trust Logo" width="350" height="auto">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="programmes.html">Programmes </a></li>
+                <li><a href="get-involved.html"> Get Involved</a></li>
+                <li><a href="give.html">Give</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html">Enquire</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main class="give-page">
+        <section class="give-intro">
+            <h1>Give to Bethany House Trust</h1>
+        <p>No cape required! Just bring only your kind heart, your helping hand and you little-bit of your love.Together,we can make a child smile today.</p>
+        </section>
+        
+        <div class="give-forms">
+
+            <section class="give-content give-hope">
+            <h2>Give hope</h2>
+            <p> Give hope with your donation</p>
+
+<form action="#" id="donate-form" onsubmit="return checkDonate()" novalidate>
+    <label for="donate-full-name">Full name:</label>
+    <input type="text" id="donate-full-name" name="full-name" maxlength="50">
+    <p id="donate-name-error" class="error-msg"></p>
+
+    <label for="donate-email">Email:</label>
+    <input type="email" id="donate-email" name="email">
+    <p id="donate-email-error" class="error-msg"></p>
+
+    <label for="donate-amount">Amount in rand (minimum R20):</label>
+    <input type="number" id="donate-amount" name="amount" min="20" max="100000">
+    <p id="donate-amount-error" class="error-msg"></p>
+
+    <button type="submit">Pledge a donation</button>
+    <p id="donate-result" class="form-result"></p>
+</form>
+            
+        </section>
+
+        <section class="give-content give-time">
+            <h2>Give Time</h2>
+            <p>Give your time and skills to make a difference in a child's life.    </p>
+
+<form action="#" id="volunteer-form" onsubmit="return checkVolunteer()" novalidate>
+    <label for="volunteer-full-name">Full name:</label>
+    <input type="text" id="volunteer-full-name" name="full-name" maxlength="50">
+    <p id="volunteer-name-error" class="error-msg"></p>
+
+    <label for="volunteer-email">Email:</label>
+    <input type="email" id="volunteer-email" name="email">
+    <p id="volunteer-email-error" class="error-msg"></p>
+
+    <label for="volunteer-phone">Phone (e.g. 0829007832):</label>
+    <input type="tel" id="volunteer-phone" name="phone" maxlength="12">
+    <p id="volunteer-phone-error" class="error-msg"></p>
+
+    <label for="volunteer-help-type">How would you like to help with your time:</label>
+    <select id="volunteer-help-type" name="help-type">
+        <option value="">-- Select --</option>
+        <option value="teaching">Teaching</option>
+        <option value="activities">Daily centre activities</option>
+        <option value="fundraising">Fundraising</option>
+        <option value="planning">Event Planning</option>
+    </select>
+    <p id="volunteer-type-error" class="error-msg"></p>
+
+    <label for="volunteer-message">Message (optional, up to 300 characters):</label>
+    <textarea id="volunteer-message" name="message" maxlength="300"></textarea>
+    <p id="volunteer-message-error" class="error-msg"></p>
+
+    <button type="submit">Volunteer</button>
+    <p id="volunteer-result" class="form-result"></p>
+</form>
+            
+        </section>  
+        
+        <section class="give-content give-home">
+            <h2>Give a child a home</h2>
+            <p>Give a child a home by becoming a foster or adoptive parent and provide a child with a safe and loving home.</p>
+
+ <form action="#" id="foster-form" onsubmit="return checkFoster()" novalidate>
+    <label for="foster-full-name">Full name:</label>
+    <input type="text" id="foster-full-name" name="full-name" maxlength="50">
+    <p id="foster-name-error" class="error-msg"></p>
+
+    <label for="foster-email">Email:</label>
+    <input type="email" id="foster-email" name="email">
+    <p id="foster-email-error" class="error-msg"></p>
+
+    <label for="foster-phone">Phone (e.g. 0829007832):</label>
+    <input type="tel" id="foster-phone" name="phone" maxlength="12">
+    <p id="foster-phone-error" class="error-msg"></p>
+
+    <label for="foster-help-type">I want to:</label>
+    <select id="foster-help-type" name="help-type">
+        <option value="">-- Select --</option>
+        <option value="foster">Become a foster parent</option>
+        <option value="adoptive">Become an adoptive parent</option>
+    </select>
+    <p id="foster-type-error" class="error-msg"></p>
+
+    <button type="submit">Become a Parent</button>
+    <p id="foster-result" class="form-result"></p>
+</form>
+            
+            </section>  
+        </div>
+        
+    </main>
+    <footer>
+       <div class="footer-content">
+            <div>
+                <h3>Bethany House Trust</h3>
+                <p>A place where children are loved, protected and supports</p>
+            </div>
+         <div>
+            <h3>Contact Us</h3>
+             <p>Phone: 0829007832</p>
+        <p>Email: admin@childincrisis.org.za</p>
+         </div>
+
+         <div>
+            <h3>Follow us</h3>
+            <a href="https://www.facebook.com/TheBethanyHouseTrust" target="_blank" rel="noopener noreferrer">Facebook</a>
+
+            <a href="https://www.instagram.com/thebethanyhousetrust/" target="_blank" rel="noopener noreferrer">Instagram</a>
+         </div>
+        </div>
+
+
+         <p class="copy-right">
+            &copy;ST10501444DISD0601_BethanyHouseTrust
+            <br><span id="datetime"></span>
+         </p>
+        
+    </footer>
+    
+    <script src="javaScript/script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Document/
+
+Sitemap: https://FikileMonyela.github.io/sitemap.xml

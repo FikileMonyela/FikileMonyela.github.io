@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+       <title>Volunteer, Donate or Foster | Bethany House Trust</title>
+<meta name="description" content="Find a way to help Bethany House Trust: volunteer your time, donate, or foster or adopt a child in Krugersdorp and the West Rand.">
+<link rel="canonical" href="https://FikileMonyela.github.io/get-involved.html">
+<meta property="og:title" content="Volunteer, Donate or Foster | Bethany House Trust">
+<meta property="og:description" content="Find a way to help Bethany House Trust: volunteer your time, donate, or foster or adopt a child in Krugersdorp and the West Rand.">
+<meta property="og:url" content="https://FikileMonyela.github.io/get-involved.html">
+
+         <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/extras.css">
+
+         <link rel="canonical" href="https://FikileMonyela.github.io/">
+
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; script-src-attr 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://tile.openstreetmap.org https://unpkg.com; connect-src 'self' https://jsonplaceholder.typicode.com; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+</head>
+<body style="background-color: whitesmoke;">
+    <header>
+         <nav class="navbar">
+            <div class="logo">
+            <img src="Image/bethany-house-trust-logo.png" alt="Bethany House Trust logo: a house, sun and flower" width="100" height="auto">
+            <img src="Image/bethanyText.png" alt="Bethany House Trust Logo" width="350" height="auto">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="programmes.html">Programmes </a></li>
+                <li><a href="get-involved.html"> Get Involved</a></li>
+                <li><a href="give.html">Give</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html">Enquire</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main class="get-involved-page">
+        <section class="get-involved-intro">
+            <h1>Get Involved</h1>
+        <p>There are only a few ways you can help our cared and loved children in our organisation. You can volunteer your time, donate, or became a foster or adaptive parent, your contribution can help us provide a safe and loving environment for our beloved children in need.</p>
+        </section>
+        
+
+        <section class="get-involved-cards">
+
+            <div class="get-involved-card volunteer-card">
+
+                <img loading="lazy" src="Image/volunteer.jpg" alt="" >
+
+            <h3>Volunteer</h3>
+            <p>You can make a difference by voulnteering your time and helping with our programmes,daily activities and events.</p>
+            <a href="give.html" class="get-involved-button">Volunteer</a>
+
+            </div>
+            
+            <div  class="get-involved-card donate-card">
+                <img loading="lazy" src="Image/donation.jpg" alt="" >
+
+                 <h3>Donate</h3>
+            <p>Your donation help us provide food,clothing,education and care to  our beloved children and families who need it.</p>
+            <p> <i> <b> Every contribution counts,no matter how small, it helps!</b></i> </p>
+            <a href="give.html" class="get-involved-button">Donate</a>
+            </div>
+            
+            <div class="get-involved-card parent-card">
+                <img src="Image/adapt.jpg" alt="" >
+
+                <h3>Became a Foster or Adoptive Parent</h3>
+            <p>A child needs a safe loving home.And you can give a child the family they deserve.</p>
+            <p>Our social workers will guide you through the foster or adaption process and explain what is needed.</p>
+
+            <a href="give.html" class="get-involved-button">Became a Parent</a>
+
+            </div>
+            
+        </section>
+
+        <section class="help-finder">
+    <h2>Find a way to help</h2>
+    <p>Search, filter or sort to find the best way for you to make a difference.</p>
+
+    <div class="help-controls">
+        <input type="text" id="help-search" placeholder="Search eg. homework" aria-label="Search ways to help" oninput="showWaysToHelp()">
+
+        <select id="help-category" aria-label="Filter by category" onchange="showWaysToHelp()">
+            <option value="All">All categories</option>
+            <option value="Volunteer">Volunteer</option>
+            <option value="Donate">Donate</option>
+            <option value="Foster or adopt">Foster or adopt</option>
+        </select>
+
+        <select id="help-sort" aria-label="Sort the results" onchange="showWaysToHelp()">
+            <option value="recommended">Sort: Recommended</option>
+            <option value="az">Name A to Z</option>
+            <option value="za">Name Z to A</option>
+            <option value="category">Category</option>
+        </select>
+
+        <button type="button" onclick="clearWaysToHelp()">Clear</button>
+    </div>
+
+    <p id="help-count"></p>
+    <div id="help-list"></div>
+</section>
+
+        <section class="faq">
+             <h2>Frequently asked questions</h2>
+
+    <div class="faq-item">
+
+        <button class="faq-question" onclick="toggleFaq(this)">Can I volunteer my time?</button>
+        <div class="faq-answer">
+            <p>Yes. Fill in the Give Time form on our <a href="give.html">Give page</a> and our team will contact you about how you can help.</p>
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question" onclick="toggleFaq(this)">How do I donate?</button>
+        
+        <div class="faq-answer">
+            <p>Use the Give Hope form on our <a href="give.html">Give page</a> to pledge an amount and we will email you the banking details. Every contribution counts, no matter how small.</p>
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question" onclick="toggleFaq(this)">How does fostering or adopting work?</button>
+       
+        <div class="faq-answer">
+            <p>Our social workers will guide you through the foster or adoption process and explain what is needed. Start by filling in the Give a Child a Home form on our <a href="give.html">Give page</a>.</p>
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+        
+        <button class="faq-question" onclick="toggleFaq(this)">Where are you based?</button>
+       
+        <div class="faq-answer">
+            <p>Bethany House Trust is based in Monument, Krugersdorp. See the map on our <a href="contact.html">Contact page</a>.</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+       <div class="footer-content">
+            <div>
+                <h3>Bethany House Trust</h3>
+                <p>A place where children are loved, protected and supports</p>
+            </div>
+         <div>
+            <h3>Contact Us</h3>
+             <p>Phone: 0829007832</p>
+        <p>Email: admin@childincrisis.org.za</p>
+         </div>
+
+         <div>
+            <h3>Follow us</h3>
+            <a href="https://www.facebook.com/TheBethanyHouseTrust">Facebook</a>
+
+            <a href="https://www.instagram.com/thebethanyhousetrust/">Instagram</a>
+         </div>
+        </div>
+
+
+         <p class="copy-right">
+            &copy;ST10501444DISD0601_BethanyHouseTrust
+            <br><span id="datetime"></span>
+         </p>
+        
+        
+    </footer>
+  <script src="javaScript/script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Us | Bethany House Trust, Krugersdorp</title>
+<meta name="description" content="Contact Bethany House Trust in Krugersdorp: send us a message by email, find our phone number and see our location on the map.">
+<link rel="canonical" href="https://FikileMonyela.github.io/contact.html">
+<meta property="og:title" content="Contact Us | Bethany House Trust, Krugersdorp">
+<meta property="og:description" content="Contact Bethany House Trust in Krugersdorp: send us a message by email, find our phone number and see our location on the map.">
+<meta property="og:url" content="https://FikileMonyela.github.io/contact.html">
+
+        <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/extras.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+        <link rel="canonical" href="https://FikileMonyela.github.io/">
+
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; script-src-attr 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://tile.openstreetmap.org https://unpkg.com; connect-src 'self' https://jsonplaceholder.typicode.com; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Bethany House Trust",
+    "description": "A child protection organisation giving orphaned and vulnerable children a safe, loving home in Krugersdorp.",
+    "url": "https://FikileMonyela.github.io/",
+    "logo": "https://FikileMonyela.github.io/Image/bethany-house-trust-logo.png",
+    "telephone": "+27829007832",
+    "email": "admin@childincrisis.org.za",
+    "foundingDate": "1998",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Krugersdorp",
+        "addressRegion": "Gauteng",
+        "addressCountry": "ZA"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.0978,
+        "longitude": 27.7302
+    },
+    "sameAs": [
+        "https://www.facebook.com/TheBethanyHouseTrust",
+        "https://www.instagram.com/thebethanyhousetrust/"
+    ]
+}
+</script>
+
+</head>
+<body style="background-color: whitesmoke;">
+    <header>
+       <nav class="navbar">
+            <div class="logo">
+            <img src="Image/bethany-house-trust-logo.png" alt="Bethany House Trust logo: a house, sun and flower" width="100" height="auto">
+            <img src="Image/bethanyText.png" alt="Bethany House Trust Logo" width="350" height="auto">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="programmes.html">Programmes </a></li>
+                <li><a href="get-involved.html"> Get Involved</a></li>
+                <li><a href="give.html">Give</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html">Enquire</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-intro">
+            <h1>Contact Us</h1>
+        <p>We would love to hear from you! Please feel free to reach out to us with any questions or inquiries.</p>
+        </section>
+        
+        <div class="contact-container">
+
+             <section class="contact-form-section">
+            <h3>Send us your message</h3>
+<form action="mailto:admin@childincrisis.org.za" id="contact-form" onsubmit="return checkContact()" novalidate>
+    <label for="contact-name">Name:</label>
+    <input type="text" id="contact-name" name="name" maxlength="50">
+    <p id="contact-name-error" class="error"></p>
+
+    <label for="contact-email">Email:</label>
+    <input type="email" id="contact-email" name="email">
+    <p id="contact-email-error" class="error"></p>
+
+    <label for="contact-phone">Phone (e.g. 0829007832):</label>
+    <input type="tel" id="contact-phone" name="phone" maxlength="12">
+    <p id="contact-phone-error" class="error"></p>
+
+    <label for="contact-type">Type of message:</label>
+    <select id="contact-type" name="message-type">
+        <option value="">-- Select --</option>
+        <option value="General question">General question</option>
+        <option value="Donation">Donation</option>
+        <option value="Volunteering">Volunteering</option>
+        <option value="Foster or adoption">Foster or adoption</option>
+        <option value="Feedback">Feedback</option>
+    </select>
+    <p id="contact-type-error" class="error"></p>
+
+    <label for="contact-message">Message us:</label>
+    <textarea id="contact-message" name="message" rows="5" maxlength="500"></textarea>
+    <p id="contact-message-error" class="error"></p>
+
+    <button type="submit">Send</button>
+    <p id="contact-result" class="form-result"></p>
+</form>
+        </section>
+
+        <section  class="contact-location">
+           <h3>Locate us</h3>
+            <br>
+            <div id="map"></div>
+
+        </section>
+
+        </div>
+       
+           
+    </main>
+    <footer>
+       <div class="footer-content">
+            <div>
+                <h3>Bethany House Trust</h3>
+                <p>A place where children are loved, protected and supports</p>
+            </div>
+         <div>
+            <h3>Contact Us</h3>
+             <p>Phone: 0829007832</p>
+        <p>Email: admin@childincrisis.org.za</p>
+         </div>
+
+         <div>
+            <h3>Follow us</h3>
+           <a href="https://www.facebook.com/TheBethanyHouseTrust" target="_blank" rel="noopener noreferrer">Facebook</a>
+
+           <a href="https://www.instagram.com/thebethanyhousetrust/" target="_blank" rel="noopener noreferrer">Instagram</a>
+         </div>
+        </div>
+
+
+         <p class="copy-right">
+            &copy;ST10501444DISD0601_BethanyHouseTrust
+            <br><span id="datetime"></span>
+         </p>
+    </footer>
+  <script src="javaScript/script.js"></script>   
+</body>
+</html>

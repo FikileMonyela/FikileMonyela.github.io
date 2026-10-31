@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sponsor a Child or Volunteer Enquiry | Bethany House Trust</title>
+<meta name="description" content="Ask about sponsoring a child or volunteering at Bethany House Trust and get an instant answer about the cost and when you can start.">
+<link rel="canonical" href="https://FikileMonyela.github.io/enquiry.html">
+<meta property="og:title" content="Sponsor a Child or Volunteer Enquiry | Bethany House Trust">
+<meta property="og:description" content="Ask about sponsoring a child or volunteering at Bethany House Trust and get an instant answer about the cost and when you can start.">
+<meta property="og:url" content="https://FikileMonyela.github.io/enquiry.html">
+
+        <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/extras.css">
+
+        <link rel="canonical" href="https://FikileMonyela.github.io/">
+
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; script-src-attr 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://tile.openstreetmap.org https://unpkg.com; connect-src 'self' https://jsonplaceholder.typicode.com; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+</head>
+<body style="background-color: whitesmoke;">
+    <header>
+       <nav class="navbar">
+            <div class="logo">
+            <img src="Image/bethany-house-trust-logo.png" alt="Bethany House Trust logo: a house, sun and flower" width="100" height="auto">
+            <img src="Image/bethanyText.png" alt="Bethany House Trust Logo" width="350" height="auto">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="programmes.html">Programmes </a></li>
+                <li><a href="get-involved.html"> Get Involved</a></li>
+                <li><a href="give.html">Give</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html">Enquire</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-intro">
+            <h1>Enquire Us</h1>
+        <p>Would you like to voulnteer or sponsor a child? Fill in the form below and we will guide you on your next step.</p>
+        </section>
+        
+         <div class="contact-container">
+        <section class="contact-form-section">
+
+            <h2>Sponsor or Volunteer enquiry</h2>
+
+<form action="#" id="enquiry-form" onsubmit="return checkEnquiryStatus()" novalidate>
+
+    <label for="enq-name">Full name:</label>
+    <input type="text" id="enq-name" name="full-name" placeholder="eg. Thandi Mokoena" maxlength="50">
+    <p id="enq-name-error" class="error"></p>
+
+    <label for="enq-email">Email:</label>
+    <input type="email" id="enq-email" name="email" placeholder="eg. thandi@gmail.com">
+    <p id="enq-email-error" class="error"></p>
+
+    <label for="enq-phone">Phone (e.g. 0829007832):</label>
+    <input type="tel" id="enq-phone" name="phone" placeholder="eg. 0829007832" maxlength="12">
+    <p id="enq-phone-error" class="error"></p>
+
+    <label for="enq-type">I would like to:</label>
+    <select id="enq-type" name="enquiry-type">
+        <option value="">-- Select --</option>
+        <option value="volunteer">Volunteer my time</option>
+        <option value="sponsor">Sponsor a child</option>
+    </select>
+    <p id="enq-type-error" class="error"></p>
+
+    <label for="enq-date">Suggested start date:</label>
+    <input type="date" id="enq-date" name="date">
+    <p id="enq-date-error" class="error"></p>
+
+    <label for="enq-message">Tell us more:</label>
+    <textarea id="enq-message" name="enquiry-message" rows="4" maxlength="300"></textarea>
+    <p id="enq-message-error" class="error"></p>
+
+    <button type="submit">Submit enquiry</button>
+    <p id="enquiry-result" class="form-result"></p>
+
+</form>
+        </section>
+    </div>
+           
+    </main>
+    <footer>
+       <div class="footer-content">
+            <div>
+                <h3>Bethany House Trust</h3>
+                <p>A place where children are loved, protected and supports</p>
+            </div>
+         <div>
+            <h3>Contact Us</h3>
+             <p>Phone: 0829007832</p>
+        <p>Email: admin@childincrisis.org.za</p>
+         </div>
+
+         <div>
+            <h3>Follow us</h3>
+            <a href="https://www.facebook.com/TheBethanyHouseTrust" target="_blank" rel="noopener noreferrer">Facebook</a>
+            
+            <a href="https://www.instagram.com/thebethanyhousetrust/" target="_blank" rel="noopener noreferrer">Instagram</a>
+         </div>
+        </div>
+
+
+         <p class="copy-right">
+            &copy;ST10501444DISD0601_BethanyHouseTrust
+            <br><span id="datetime"></span>
+         </p>
+    </footer>
+  <script src="javaScript/script.js"></script>   
+</body>
+</html>
