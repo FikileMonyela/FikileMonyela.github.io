@@ -3,7 +3,7 @@
 I have built a multi-page website for Bethany House Trust, a child protection organisation in krugersdorp, Gauteng. This project is done for part 3 of the POE, focusing on adding functionality and setting a proper SEO.
 
 Author: Fikile Phemela Monyela
-Live Site:https://github.com/FikileMonyela/FikileMonyela.github.io
+Live Site:https://fikilemonyela.github.io/
 Respository:
 
 ## Pages
